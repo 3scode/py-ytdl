@@ -45,8 +45,8 @@ Downloader YouTube dengan dual-interface (CLI + GUI). Download video/audio dari 
 
 4. **Jalankan**
    ```cmd
-   python cli-ytdownloader.py    # CLI version
-   python ytdownloader-gui.py    # GUI version
+   python cli.py    # CLI version
+   python gui.py    # GUI version
    ```
 
 5. **FFmpeg** — Jika belum terinstall, program akan otomatis mendownload FFmpeg saat pertama kali dijalankan. Atau bisa juga [download manual](https://ffmpeg.org/download.html) dan taruh di `ffmpeg/bin/`.
@@ -55,15 +55,15 @@ Downloader YouTube dengan dual-interface (CLI + GUI). Download video/audio dari 
 
 ```bash
 pip install -r requirements.txt
-python cli-ytdownloader.py
-python ytdownloader-gui.py
+python cli.py
+python gui.py
 ```
 
 ## Cara Pakai
 
 ### CLI Version
 ```bash
-python cli-ytdownloader.py
+python cli.py
 ```
 Pilih format (MP3/MP4), kualitas, lalu pilih menu:
 1. **Single Download** — Masukkan URL YouTube
@@ -73,7 +73,7 @@ Pilih format (MP3/MP4), kualitas, lalu pilih menu:
 
 ### GUI Version
 ```bash
-python ytdownloader-gui.py
+python gui.py
 ```
 Tersedia 3 tab:
 - **Single** — Input URL, download dengan progress bar
@@ -119,8 +119,8 @@ File `list.txt` yang tersedia saat ini berisi 50 lagu tarling (musik khas Cirebo
 
 ```
 cli-ytdownloader/
-├── cli-ytdownloader.py   # CLI version (Rich)
-├── ytdownloader-gui.py   # GUI version (CustomTkinter)
+├── cli.py   # CLI version (Rich)
+├── gui.py   # GUI version (CustomTkinter)
 ├── requirements.txt      # yt-dlp, rich, customtkinter
 ├── README.md             # Dokumentasi
 ├── list.txt              # Daftar URL untuk batch download
