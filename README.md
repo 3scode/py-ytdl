@@ -33,8 +33,8 @@ Downloader YouTube dengan dual-interface (CLI + GUI). Download video/audio dari 
 
 2. **Clone atau Download Repo**
    ```cmd
-   git clone https://github.com/codebytrisno/cli-ytdownloader.git
-   cd cli-ytdownloader
+    git clone https://github.com/3scode/py-ytdl.git
+    cd py-ytdl
    ```
    Atau download ZIP dan extract.
 
@@ -118,17 +118,21 @@ File `list.txt` yang tersedia saat ini berisi 50 lagu tarling (musik khas Cirebo
 ## Struktur Project
 
 ```
-cli-ytdownloader/
+py-ytdl/
 ├── cli.py   # CLI version (Rich)
 ├── gui.py   # GUI version (CustomTkinter)
 ├── requirements.txt      # yt-dlp, rich, customtkinter
 ├── README.md             # Dokumentasi
 ├── list.txt              # Daftar URL untuk batch download
+├── citra-nada.txt        # Daftar lagu Citra Nadia
+├── sandiwara.txt         # Daftar lagu Sandiwara
+├── tarling.txt           # Daftar lagu Tarling
+├── tendung.txt           # Daftar lagu Tendung
 ├── downloads/            # Hasil download (gitignored)
 └── ffmpeg/               # FFmpeg auto-install (gitignored)
     └── bin/
-        ├── ffmpeg.exe
-        └── ffprobe.exe
+        ├── ffmpeg
+        └── ffprobe
 ```
 
 ## Lisensi
